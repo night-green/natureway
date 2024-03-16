@@ -1,0 +1,12 @@
+{
+  "name": "natureway",
+  "version": "1.0.0",
+  "description": "landing page for company providing nature tours. created with HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
