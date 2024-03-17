@@ -67,21 +67,6 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  .header__logo-box {
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-out; }
-  .header__logo {
-    height: 3.5rem; }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
 
 .btn {
   text-decoration: none;
@@ -112,3 +97,22 @@ body {
       transform: translateY(-0.1rem);
       text-shadow: 0 0.5rem 0.7rem rgba(11, 40, 22, 0.7);
       box-shadow: 0 0.5rem 0.7rem rgba(11, 40, 22, 0.4); }
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.header__logo-box {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 2rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out; }
+
+.header__logo {
+  height: 3.5rem; }
