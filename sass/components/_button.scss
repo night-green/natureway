@@ -1,0 +1,38 @@
+.btn {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--white {
+    background-color: $white-color;
+    color: $tertiary-color;
+    border: $white-color 0.2rem solid;
+  }
+
+  &--animated {
+    transition: all 0.2s;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    box-shadow: 0 0.5rem 0.5rem rgba($black-color, 0.1);
+
+    &:hover {
+      background-color: transparent;
+      color: $white-color;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 0.5rem 1rem rgba($black-color, 0.3);
+      text-shadow: 0 0.5rem 1rem rgba($black-color, 0.7);
+    }
+
+    &:active {
+      transform: translateY(-0.1rem);
+      text-shadow: 0 0.5rem 0.7rem rgba($black-color, 0.7);
+      box-shadow: 0 0.5rem 0.7rem rgba($black-color, 0.4);
+    }
+  }
+}

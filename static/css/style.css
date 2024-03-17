@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #0b2816; }
+
+.heading-primary {
+  text-transform: uppercase;
+  color: #f5f5f5;
+  backface-visibility: hidden;
+  text-align: left; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.74rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    opacity: 0.5;
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    opacity: 0.5;
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.btn {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .btn--white {
+    background-color: #f5f5f5;
+    color: #28b485;
+    border: #f5f5f5 0.2rem solid; }
+  .btn--animated {
+    transition: all 0.2s;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    box-shadow: 0 0.5rem 0.5rem rgba(11, 40, 22, 0.1); }
+    .btn--animated:hover {
+      background-color: transparent;
+      color: #f5f5f5;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 0.5rem 1rem rgba(11, 40, 22, 0.3);
+      text-shadow: 0 0.5rem 1rem rgba(11, 40, 22, 0.7); }
+    .btn--animated:active {
+      transform: translateY(-0.1rem);
+      text-shadow: 0 0.5rem 0.7rem rgba(11, 40, 22, 0.7);
+      box-shadow: 0 0.5rem 0.7rem rgba(11, 40, 22, 0.4); }
